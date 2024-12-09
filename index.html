@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unix Christmas Giveaway</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="./image/favicon.png">
+</head>
+<body>
+  <header>
+    <h1>🎄 Christmas Unix Giveaway 🎁</h1>
+    <p>Jishindie zawadi ya ajabu kabla ya Krismasi! Jiunge sasa!</p>
+    <div id="countdown">
+      <p>Zimesalia: <span id="days">00</span>d : <span id="hours">00</span>h : <span id="minutes">00</span>m : <span id="seconds">00</span>s</p>
+    </div>
+    <audio autoplay loop>
+        <source src="./audio/audio1.mp3" type="audio/mp3">
+    </audio>
+  </header>
+
+  <main background="favicon.png">
+    <section id="instructions">
+      <h2>Jinsi ya Kushiriki</h2>
+      <p>Hakikisha umefuata akaunti zangu kabla ya kujiandikisha:</p>
+      <ul>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/Kelvin_unix" target="_blank">@Kelvin_unix</a></li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/#unix" target="_blank">@#unix</a></li>
+      </ul>
+      <p>Kisha jaza jina lako hapa chini:</p>
+    </section>
+
+    <section id="register">
+      <h2>jaza Jina lako</h2>
+      <form id="registrationForm">
+        <input type="text" id="name" placeholder="Ingiza Jina Lako" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="participants">
+      <h2>Washiriki Waliosajiliwa</h2>
+      <ul id="participantList"></ul>
+    </section>
+
+    <section id="winner">
+      <h2>Tangaza Mshindi</h2>
+      <button id="pickWinner">Chagua Mshindi</button>
+      <p id="winnerName"></p>
+    </section>
+
+    <section id="share">
+      <h2>Alika marafiki ili kuongeza nafasi ya kushinda</h2>
+      <button id="shareButton">Share link</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Christmas Giveaway. Made with ❤️ for the festive season.</p>
+  </footer>
+
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <h2>🎉 Hongera Mshindi! 🎉</h2>
+      <p id="popupWinner"></p>
+      <button id="closePopup">Funga</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
